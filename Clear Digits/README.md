@@ -32,10 +32,11 @@ System.out.println(result); // Output: ""
 - The method ensures safe removal by checking index bounds.
 
 ## Time and Space Complexity
--**Time Complexity:**
+- **Time Complexity:**
 
-**Worst case:** O(n^2), because each call to deleteCharAt(i) shifts all subsequent characters, making each deletion take up to O(n). Since there can be up to O(n) deletions, the total worst-case complexity is O(n^2).
+  **Worst case:** O(n^2), because each call to deleteCharAt(i) shifts all subsequent characters, making each deletion take up to O(n). Since there can be up to 
+                  O(n) deletions, the total worst-case complexity is O(n^2).
 
-**Best case:** O(n), when there are no digits in the string, so we only traverse the string once without performing deletions.
+  **Best case:** O(n), when there are no digits in the string, so we only traverse the string once without performing deletions.
 - **Space Complexity:** `O(n)`, since we use a `StringBuilder` which can store up to `n` characters in the worst case.
 
